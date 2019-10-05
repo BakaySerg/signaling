@@ -22,5 +22,4 @@ $(document).ready(function(){
     }).done(function() {$(".form").trigger("reset");});
     return false;
   });
-
 });
