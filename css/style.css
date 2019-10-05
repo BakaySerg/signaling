@@ -43,7 +43,7 @@ a,a:focus {
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	max-width: 1220px;
+	max-width: 660px;
 }
 /**/
 .s-intro {
@@ -125,8 +125,7 @@ p {padding-bottom: 1em;}
 	margin-bottom: 1.1em;
 }
 .form__container {
-	padding-left: 8px;
-	padding-right: 8px;
+	padding: 10px 10px 13px;
 	max-width: 480px;
 	margin-left: auto;
 	margin-right: auto;
@@ -134,7 +133,9 @@ p {padding-bottom: 1em;}
 .form {
 	background-color: #fff;
 	border-radius: 36px;
-	padding: 2.5em 26px;
+	padding: 2.6em 26px;
+	text-align: center;
+	width: 100%;
 }
 .form__title {
 	font-weight: 800;
@@ -147,15 +148,91 @@ p {padding-bottom: 1em;}
 	line-height: 1;
 	margin-bottom: .3em;
 }
-.form input:focus,.form textarea:focus{
-	border: 1px solid #e25f07;
+.form__subtitle {
+	font-size: 1.06em;
+	margin-bottom: 1.3em;
+	text-align: center;
+}
+.form__input {
+	display: block;
+	width: 100%;
+	height: 48px;
+	font-size: 1.04em;
+	letter-spacing: .02em;
+	color: #6A6967;
+	border: 1px solid #E4E3E1;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-right: 9px;
+	-webkit-appearance: none;
+	appearance: none;
+	box-shadow: none!important;
+	outline-color: transparent;
+	transition: .4s ease;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 18px;
+}
+.form__input:focus {
 	outline-color: transparent;
 	box-shadow: none;
+	border-color: currentColor;
 }
+.form__input:invalid:focus {color: var(--accent-red)}
+
 ::-webkit-input-placeholder {transition: .4s}
 ::-moz-placeholder {transition: .4s}
 :-ms-input-placeholder {transition: .4s}
 
+.btn {
+	font-size: 1.33em;
+	font-weight: 600;
+	border: none;
+	border-radius: 3em;
+	text-align: center;
+	white-space: nowrap;
+	font-family: inherit;
+	line-height: 1.1;
+	letter-spacing: .03em;
+	transition:.35s;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline-color: transparent;
+	padding: 1.1em 2.7em;
+	background-color: var(--accent-green);
+	color: #fff;
+}
+.btn:hover {background: #6FAC31;}
+
+.form .btn  {margin-top: 5px;}
+
+.small-pop-up {
+	position: relative;
+	width: calc(100% - 28px);
+	max-width: 600px;
+	background-color: #fff;
+	box-shadow: 0 10px 20px rgba(1,2,2,.06);
+	border-radius: 16px;
+	margin: auto;
+	padding: 48px 30px 23px;
+	text-align: center;
+}
+.small-pop-up .mfp-close {display: none;}
+
+.mfp-bg {background-color: rgba(40,40,40,.7)}
+
+.popup__title {
+	font-weight: 800;
+	font-size: 1.6em;
+	color: var(--accent-green);
+	margin-bottom: .5em;
+	text-transform: uppercase;
+}
+.popup__title--error {color: var(--accent-red);}
+
+@media (min-width: 600px){
+	.wrapper {padding: 2em 0;}
+}
 @media (max-width: 359px){
 	.intro__price {
 		top: 17px;

@@ -53,11 +53,25 @@
             <form action="#" class="form">
                <div class="form__title">Успейте заказать <span class="accent">по скидке</span></div>
                <div class="form__subtitle">Заполните форму ниже</div>
-               <input type="text" name="name" placeholder="Ваше имя" minlength="2">
-               <input type="tel" name="tel" placeholder="Ваш телефон*" required >
+               <input class="form__input" type="text" name="name" placeholder="Ваше имя" minlength="2">
+               <input class="form__input" type="tel" name="tel" placeholder="Ваш телефон*" required >
                <button type="submit" class="btn">Заказать</button>
             </form>
          </div>
+
+         <!-- Success -->
+         <div id="popup-success" class="small-pop-up mfp-hide">
+            <h3 class="popup__title">Заявка принята!</h3>
+            <p class="popup__subtitle">Наш менеджер свяжется с Вами в ближайшее время</p>
+         </div>
+
+         <!-- Error -->
+         <div id="popup-error" class="small-pop-up mfp-hide">
+            <h3 class="popup__title popup__title--error">Произошла ошибка!</h3>
+            <p class="popup__subtitle">Нет связи с сервером. Попробуйте пожалуйста позже...</p>
+         </div>
+
+
 
       </div><!-- /Wrapper-->
 
