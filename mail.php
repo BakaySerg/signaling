@@ -5,15 +5,15 @@ function mail_utf8($to, $from, $subject='(No subject)', $message='', $add_header
     mail($to, '=?UTF-8?B?'.base64_encode($subject).'?=', $message, $headers);
 }
 
-$recepient = 'parts@amur.trade';  //*свой Email*/
-$sitename = "parts...";								//сюда вставить свой сайт
-$from = 'www.parts....';
+$recepient = 'youremail@mail.ru';            //*свой Email*/
+$sitename = "your-site.ru";					//свой сайт
+$from = 'your-site.ru';
 
 $name = trim($_POST["name"]);
 $tel = trim($_POST["tel"]);
 $subject = trim($_POST["subject"]);
 
-$message = "Я подал(а) заявку, $subject\n Имя: $name\n Телефон: $tel\n Количество: $quantity\n Доставить: $deliv";
+$message = "Я подал(а) заявку, $subject\n Имя: $name\n Телефон: $tel\n";
 
 $pagetitle = 'Новая заявка с сайта "'.$sitename.'"';
 

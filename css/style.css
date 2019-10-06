@@ -231,6 +231,23 @@ p {padding-bottom: 1em;}
 
 @media (min-width: 600px){
 	.wrapper {padding: 2em 0;}
+
+	.intro__price{
+		font-size: 1.23em;
+		left: 33px;
+	}
+
+	.intro__discount {
+		font-size: 1.2em;
+		top: 135px;
+		left: -8px;
+	}
+	.title-box{margin-bottom: 21px;}
+
+	.title{font-size: 2em;}
+
+	.intro__core{margin-bottom: .9em;}
+
 }
 @media (max-width: 359px){
 	.intro__price {
